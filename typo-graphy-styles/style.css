@@ -5,11 +5,6 @@ body{
 	background-size: cover;
 }
 
-.container > header h1,
-.container > header h2 {
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
 
 .cs-text {
 	width: 645px;
@@ -45,7 +40,7 @@ body{
 	display: block;
 	line-height: 180px;
 	color: rgba(255,255,255,1);
-	font-size: 180px;
+	font-size: 120px;
 	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
@@ -59,13 +54,12 @@ body{
 }
 
 .cs-text-mid {
-	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
 	font-size: 50px;
-	letter-spacing: 50px;
+	letter-spacing: 10px;
 	line-height: 50px;
-	text-indent: 20px;
+	text-indent: 160px;
 	position: absolute;
 	top: 50%;
 	margin-top: -25px;
@@ -114,4 +108,15 @@ body{
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
+}
+
+
+.container{
+	width: 100%;
+	position: relative;
+}
+.main{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
 }
