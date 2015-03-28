@@ -1,5 +1,4 @@
 /* Common style */
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .grid {
 	margin: 40px auto 120px;
 	max-width: 1000px;
@@ -116,32 +115,6 @@
 }
 
 /* Individual styles */
-.demo-1 body {
-	background: #3498db;
-}
-
-.demo-1 .grid figure button,
-.demo-3 .grid figure button {
-	top: 50%;
-	left: 50%;
-	border: 3px solid #fff;
-	background: transparent;
-	color: #fff;
-	opacity: 0;
-	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
-	transform: translateY(-50%) translateX(-50%) scale(0.25);
-}
-
-.demo-1 .grid a:hover figure button,
-.demo-3 .grid a:hover figure button {
-	opacity: 1;
-	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
-	transform: translateY(-50%) translateX(-50%) scale(1);
-}
-
-.pi body {
-	background: #e74c3c;
-}
 
 .pi .grid figcaption h2 {
 	color: #e74c3c;
@@ -153,7 +126,7 @@
 }
 
 .pi .grid figure button {
-	bottom: -2;
+	bottom: 0;
 	left: 0;
 	padding: 15px;
 	width: 100%;
@@ -172,13 +145,19 @@
 }
 
 .pi .grid figcaption h2,
-.pi .grid figcaption p{
+.pi .grid figcaption p {
 	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
 	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
 	timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
 }
 
-.pi .grid a:hover figcaption p,
+.pi .grid a:hover figcaption p{
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+}
+
 
 @media screen and (max-width: 58em) {
 	.grid a {
