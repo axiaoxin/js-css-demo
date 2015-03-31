@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="jquery.js"></script>
+        <script src="ui.js"></script>
+        <link rel="stylesheet" href="ui.css">
+        <script>
+          $(function(){
+            var card = ui.card('<em>font</em>', '<u>back</u>');
+            card.el.appendTo('#card');
+            $('#flip').click(function(){
+              card.flip();
+              return false;
+            })
+          });
+        </script>
+    </head>
+    <body>
+        <a href="#" id="flip">翻牌</a>
+        <div id="card"></div>
+    </body>
+</html>
